@@ -8,7 +8,7 @@ html {
 
 }
 
-a   {
+a {
   color: inherit;
   text-decoration: none;
 }
@@ -46,14 +46,26 @@ body {
   margin: 0 auto;
 }
 
+.section-offset {
+  padding-bottom: 70px;
+}
+
+/* header */
+
+
 .header-container {
   align-items: center;
   flex-flow: row wrap;
   justify-content: center;
 }
 
+.header-icon-link {
+  text-align: center;
+}
+
 .header {
   padding: 36px 0;
+
 }
 
 .header-logo {
@@ -98,10 +110,85 @@ body {
   padding: 0;
 }
 
-.btn-header-btn:last-child {
-  margin-right: 45px;
+/* special-list */
+
+.visually-hidden {
+  display: none;
 }
 
 
+.section-title {
+  margin-top: auto;
+}
+
+.special-title,
+.about-title,
+.services-title,
+.benefits-title,
+.article-title {
+  margin: 0;
+  margin-bottom: 20px;
+}
 
 
+.blog-services-desc {
+  margin-top: auto 15;
+}
+
+.services-list {
+  flex-wrap: wrap;
+}
+
+.services-items {
+  width: 570px;
+  margin-bottom: 24px;
+}
+
+.services-items:not(:nth-child(2n)) {
+  margin-right: 24px;
+}
+
+.blog-services-title {
+  margin: auto;
+}
+
+.card1 {
+  margin-bottom: 24px;
+}
+
+
+.special__content {
+  min-height: 600px;
+  outline: 1px solid red;
+  display: flex;
+}
+
+.special__block {
+  display: flex;
+  flex-direction: column;
+  width: calc((100% - 30px) / 2);
+}
+
+.special__block:not(:last-child) {
+  margin-right: 30px;
+}
+
+.special__item {
+  flex: 1;
+  outline: 1px solid red;
+
+  margin-bottom: 30px;
+  background-color: grey;
+
+  padding: 40px;
+}
+
+.item-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.special__item:last-child {
+  margin-bottom: 0;
+}

@@ -21,6 +21,7 @@ a {
 
 img {
   max-width: 100%;
+  border-radius: 15px 15px 0px 0px;
 }
 
 body {
@@ -53,6 +54,13 @@ body {
   gap: 45px;
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
 
 /* MAIN PAGE */
 .list-reset {
@@ -115,7 +123,7 @@ body {
   padding: 15px 0;
 }
 
-.header-profile-button > p {
+.header-profile-button>p {
   margin: 0 0 0 7px;
 }
 
@@ -140,7 +148,6 @@ body {
 
   background-color: #FFFFFF;
   border-radius: 15px;
-
 }
 
 .header-list {
@@ -194,8 +201,9 @@ body {
   margin-right: 24px;
 }
 
-.blog-services-title {
-  margin: auto;
+.blog-services-text {
+  margin-bottom: auto;
+  padding: 26px 126px 35px 45px
 }
 
 .card1 {
@@ -239,7 +247,7 @@ body {
 .benefits-list {
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 10px;
+  gap: 22px;
   margin-inline: auto;
 
 
@@ -256,11 +264,11 @@ body {
 
 @media (min-width: 1155px) {
   .benefits-item {
-    flex-basis: calc((100% - 77px) / 4);
+    flex-basis: calc((100% - 77px) / 6);
   }
 }
 
-.article-list{
+.article-list {
   flex-wrap: wrap;
   gap: 24px;
   margin-inline: auto;
@@ -271,10 +279,60 @@ body {
   flex-direction: column;
   max-width: 400px;
 
-  }
+}
 
 .article-details {
   min-width: 374px;
   min-height: 350px;
   align-self: flex-end;
 }
+
+.blog-preview-text {
+  padding: 32px 45px 45px 45px;
+  background-color: #FFFFFF;
+  border-radius: 0px 0px 15px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.location {
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 13px 20px;
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 10px;
+  display: flex;
+  width: 100px;
+  height: 42px;
+  background-color: #FFFFFF;
+  align-items: center;
+}
+
+.raiting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+
+.price {
+  padding-bottom: 16px;
+}
+
+.benefits-item {
+  padding: 40px 42px 32px 45px;
+
+}
+
+.blog-services-title {
+  margin-bottom: 20px;
+}
+
+/*  Если ставлю - сползает кнопка
+.btn-header-btn:not(:last-child){
+  margin-bottom: 20px;
+} */

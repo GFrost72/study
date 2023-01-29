@@ -14,6 +14,36 @@ html {
 
 }
 
+@font-face{
+  font-family: 'Muller';
+  src: local("Muller-Regular"),
+  url('../fonts/MullerRegular.woff2') format("woff2"),
+  url('../fonts/MullerRegular.woff') format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'Muller';
+  src: local("Muller-Medium"),
+  url('../fonts/MullerMedium.woff2') format("woff2"),
+  url('../fonts/MullerMedium.woff') format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'Muller';
+  src: local("Muller-Bold"),
+  url('../fonts/MullerBold.woff2') format("woff2"),
+  url('../fonts/MullerBold.woff') format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -26,8 +56,9 @@ img {
 
 body {
   min-width: 1200px;
-  font-family: 'font', sans-serif;
+  font-family: 'Muller', sans-serif;
   background-color: #E5E5E5;
+  font-weight: 400;
 }
 
 
@@ -117,10 +148,17 @@ p {
 
 .header-item-link {
   padding: 15px 0;
+  font-size: 20px;
+  line-height: 20px;
+  color: #666666;
 }
 
 .header-profile-button {
   padding: 15px 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #CC9933;
 }
 
 .header-profile-button>p {
@@ -129,11 +167,14 @@ p {
 
 .header-list-link {
   padding: 13px 20px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #666666;
 }
 
 .btn-header-btn {
   padding: 13px 20px;
-
+  line-height: 16px;
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
   border-radius: 10px;
@@ -178,11 +219,27 @@ p {
 .article-title {
   margin: 0;
   margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #333333;
+
+}
+
+.about-descr {
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
 }
 
 
 .blog-services-desc {
   margin-top: auto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
+
 }
 
 .services-list {
@@ -195,6 +252,41 @@ p {
 .services-items {
   width: 570px;
   margin-bottom: 24px;
+  display: flex;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  padding: 0 auto;
+}
+
+.special-item-right {
+  padding: 274px 229px 148px 45px;
+
+}
+
+
+
+.special_price_desc_right {
+  font-size: 30px;
+  line-height: 30px;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+.services-image1 {
+  background-image: url(..//img/services-1.jpg);
+
+}
+
+.services-image2 {
+  background-image: url(..//img/services-2.jpg);
+}
+
+.services-image3 {
+  background-image: url(..//img/services-3.jpg);
+}
+
+.services-image4 {
+  background-image: url(..//img/services-4.jpg);
 }
 
 .services-items:not(:nth-child(2n)) {
@@ -203,7 +295,10 @@ p {
 
 .blog-services-text {
   margin-bottom: auto;
-  padding: 26px 126px 35px 45px
+  padding: 26px 126px 35px 45px;
+  background: white;
+  border-radius: 0px 0px 15px 15px;
+
 }
 
 .card1 {
@@ -223,22 +318,99 @@ p {
 
 }
 
+.special-title-desc {
+
+  font-size: 40px;
+  line-height: 40px;
+  color: #FFFFFF;
+  width: 420px;
+  padding-bottom: 15px;
+  display: inline-block;
+}
+
+.special_price_desc {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #FFFFFF;
+  opacity: 0.8;
+  padding-bottom: 47px;
+}
+
+.special-desc-details {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  vertical-align: middle;
+  color: #F0BF5F;
+
+}
+
+.special-title-right-desc {
+  font-size: 60px;
+  line-height: 65px;
+  color: #FFFFFF;
+  padding-bottom: 15px;
+}
+
+.special_price_desc_right {
+  padding-bottom: 47px;
+}
+
+.special-desc-details-right {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #F0BF5F;
+
+}
+
+.special__block-image-1 {
+background-image: url(..//img/blog-1.jpg);
+background-repeat: round;
+background-size: cover;
+border-radius: 15px;
+}
+.special__block-image-2 {
+background-image: url(..//img/blog-2.jpg);
+background-repeat: round;
+background-size: cover;
+border-radius: 15px;
+}
+.special__block-image-3 {
+background-image: url(..//img/blog-3.jpg);
+background-size:  584px 630px;
+background-repeat: round;
+border-radius: 15px;
+}
+
 
 .special__block:not(:last-child) {
   margin-right: 30px;
 }
 
 .special__item {
-  /* flex: 1; */
+  flex: 1;
   margin-bottom: 30px;
-  padding: 40px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  padding: 40px 108px 40px 45px;
+
 }
 
 .item-right {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  font-weight: 700;
+  font-size: 60px;
+  /* padding: 240px 230px 148px 45px; */
+  height: 180px;
+  justify-content: flex-end;
 }
+
+
 
 .special__item:last-child {
   margin-bottom: 0;
@@ -277,14 +449,13 @@ p {
 
 .article-item {
   flex-direction: column;
-  max-width: 400px;
-
-}
+ }
 
 .article-details {
   min-width: 374px;
-  min-height: 350px;
-  align-self: flex-end;
+  background-image: url(..//img/article-9.jpg);
+  height: 440px;
+  border-radius: 15px;
 }
 
 .blog-preview-text {
@@ -310,6 +481,15 @@ p {
   height: 42px;
   background-color: #FFFFFF;
   align-items: center;
+  cursor: pointer;
+}
+
+.article-title-desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+  padding-bottom: 16px;
 }
 
 .raiting {
@@ -321,6 +501,31 @@ p {
 
 .price {
   padding-bottom: 16px;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #000000;
+  padding-right: 4px;
+}
+
+.price-desc {
+  font-size: 16px;
+  line-height: 16px;
+  color: #999999;
+  padding-right: 4px;
+}
+
+.price-desc-night {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.location {
+  font-size: 16px;
+  line-height: 16px;
+  color: #999999;
 }
 
 .benefits-item {
@@ -330,6 +535,31 @@ p {
 
 .blog-services-title {
   margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 200%;
+  color: #CC9933;
+  vertical-align: middle;
+  font-weight: 500;
+}
+
+.blog-services {
+  padding-top: 165px;
+}
+
+.benefits-desc {
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
+  padding-top: 5px;
+}
+
+.article-item-link {
+  font-size: 20px;
+  line-height: 200%;
+  font-weight: 500;
+  color: #FFFFFF;
+  padding: 373px 70px 27px 54px;
+
 }
 
 /*  Если ставлю - сползает кнопка

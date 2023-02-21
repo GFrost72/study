@@ -20,13 +20,12 @@
   <header class="header header-bacground section-offset">
     <div class="container container--header">
 
-      <div class="burger">
-        <svg width="30" height="23" viewBox="0 0 30 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="30" height="3" fill="black" />
-          <rect y="10" width="30" height="3" fill="black" />
-          <rect y="20" width="30" height="3" fill="black" />
-        </svg>
-      </div>
+
+      <button class="btn-reset burger">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
 
       <a href="#" class="logo">
         <img src=".//img/Logo-1.svg" alt="logo">
@@ -36,19 +35,19 @@
         <nav class="nav">
           <ul class="nav__list list-reset">
             <li class="nav__item">
-              <a href="#about">О нас</a>
+              <a class="nav-link" href="#about">О нас</a>
             </li>
             <li class="nav__item">
-              <a href=""> Проекты</a>
+              <a class="nav-link" href=""> Проекты</a>
             </li>
             <li class="nav__item">
-              <a href=""> Этапы</a>
+              <a class="nav-link" href=""> Этапы</a>
             </li>
             <li class="nav__item">
-              <a href=""> Отзывы</a>
+              <a class="nav-link" href=""> Отзывы</a>
             </li>
             <li class="nav__item">
-              <a href=""> Контакты</a>
+              <a class="nav-link" href=""> Контакты</a>
             </li>
           </ul>
         </nav>
@@ -69,8 +68,8 @@
 
   <!-- HERO -->
 
-  <section id="hero" class="hero section-offset">
-    <div class="container">
+  <section id="hero" class="hero section-offset hero--section">
+    <div class="container hero--container">
       <div class="hero-wrapper">
         <h1 class="hero-tittle">Проектные решения любой сложности</h1>
         <span class="hero-desc">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются
@@ -102,8 +101,8 @@
           качества экспериментов.</span>
       </div>
       <div class="about-block">
-        <div class="about__block">
-          <article class="block-item block-image">
+        <div class="about__block block-image">
+          <article class="block-item ">
             <div class="block-left-content">
               <span class="block-left-text"> Принимая во внимание показатели успешности, перспективное планирование
                 способствует подготовке
@@ -224,7 +223,7 @@
         </li>
         <li class="questions__li">
           <a href="#" class="questions__link">
-            <h4 class="questions__header">У меня есть свой проект. Сможем ли мы его доработать / реализовать?</h4>
+            <h4 class="questions__header">У меня есть свой проект. Сможем ли мы его доработать /<br> реализовать?</h4>
             <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
               <ellipse cx="25" cy="25" rx="25" ry="25" fill="#ECECEC"></ellipse>
               <path fill-rule="evenodd" clip-rule="evenodd"

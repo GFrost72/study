@@ -7,13 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cld</title>
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
   <link type="image/x-icon" href="../img/favicon.svg" rel="shortcut icon">
   <link type="Image/x-icon" href="../img/favicon.svg" rel="icon">
   <link
     href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
     rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 
 <body class="page">
@@ -71,16 +71,37 @@
 
   <section id="hero" class="hero section-offset hero--section">
     <div class="container hero--container">
-      <div class="hero-wrapper">
-        <h1 class="hero-tittle">Проектные решения любой сложности</h1>
-        <span class="hero-desc">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются
-          уделом проектантов</span>
-        <button class="hero__btn btn-reset">Заказать расчёт</button>
-        <div class="slider-boolet-list">
-          <div class="slider-boolet"></div>
-          <div class="slider-boolet"></div>
-          <div class="slider-boolet"></div>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="hero-wrapper ">
+              <h1 class="hero-tittle">Проектные решения любой сложности</h1>
+              <span class="hero-desc">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день
+                остаются
+                уделом проектантов</span>
+              <button class="hero__btn btn-reset">Заказать расчёт</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="hero-wrapper-2">
+              <h1 class="hero-tittle">Проектные решения любой сложности</h1>
+              <span class="hero-desc">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день
+                остаются
+                уделом проектантов</span>
+              <button class="hero__btn btn-reset">Заказать расчёт</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="hero-wrapper-3">
+              <h1 class="hero-tittle">Проектные решения любой сложности</h1>
+              <span class="hero-desc">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день
+                остаются
+                уделом проектантов</span>
+              <button class="hero__btn btn-reset">Заказать расчёт</button>
+            </div>
+          </div>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
     </div>
   </section>
@@ -399,8 +420,9 @@
       </div>
     </div>
   </footer>
-  <script src="js/scripts.js"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>

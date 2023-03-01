@@ -8,6 +8,11 @@ html {
   box-sizing: border-box;
 }
 
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
 @media (max-width: 1199.98px) {}
 
 @media (max-width: 991.98px) {}
@@ -257,8 +262,21 @@ p {
 }
 
 @media (max-width: 1024px) {
-  .nav {
-    display: none;
+ .nav {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  min-width: 250px;
+  height: 100vh;
+  z-index: 1000;
+  padding: 50px;
+  box-shadow: 0 0 5px #888;
+  background-color: #fff;
+  overflow-y: auto;
+  visibility: hidden;
+  transform: translate(-120%);
+  transition: visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
   }
 }
 
@@ -294,9 +312,9 @@ p {
   outline: none;
 }
 
-/* .burger {
+.burger {
   display: none;
-} */
+}
 
 @media (max-width: 1024px) {
   .burger {
@@ -342,6 +360,34 @@ p {
   }
 }
 
+.burger--active
+.burger__line:nth-child(2) {
+  opacity: 0;
+}
+
+.burger--active
+.burger__line:first-child {
+  left: 25%;
+  top: 50%;
+  transform: rotate(45deg);
+  transform-origin: center;
+  transition: transform 0.3s ease-in-out, top 0.3 ease-in-out, left 0.3 ease-in-out;
+}
+
+.burger--active
+.burger__line:last-child {
+  bottom: auto;
+  left: 25%;
+  top: 50%;
+  transform: rotate(-45deg);
+  transform-origin: center;
+  transition: transform 0.3s ease-in-out, top 0.3 ease-in-out, left 0.3 ease-in-out;
+}
+
+.stop-scroll {
+  overflow: hidden;
+}
+
 /* HERO */
 
 
@@ -354,6 +400,28 @@ p {
   padding: 100px 853px 100px 80px;
   position: relative;
 }
+
+.hero-wrapper-2 {
+  background-image: url(../img/hero-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 32px;
+  min-height: 620px;
+  padding: 100px 853px 100px 80px;
+  position: relative;
+}
+
+.hero-wrapper-3 {
+  background-image: url(../img/hero-3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 32px;
+  min-height: 620px;
+  padding: 100px 853px 100px 80px;
+  position: relative;
+}
+
+
 
 @media (max-width: 1024px) {
   .hero-wrapper {
@@ -1778,4 +1846,8 @@ p {
 
 .social-item:active svg {
   fill: #E1670E;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: var(--swiper-pagination-bottom,29px);
 }

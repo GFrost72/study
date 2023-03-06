@@ -11,22 +11,34 @@
   <link rel="stylesheet" href="css/style.css">
   <link type="image/x-icon" href="../img/favicon.svg" rel="shortcut icon">
   <link type="Image/x-icon" href="../img/favicon.svg" rel="icon">
-  <link
-    href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
     rel="stylesheet" />
+    <link rel="stylesheet" href="css/accordion.min.css">
 </head>
 
 <body class="page">
   <!-- HEADER -->
+
   <header class="header header-bacground section-offset">
     <div class="container container--header">
 
+      <div class="nav-menu">
 
-      <button class="btn-reset burger">
-        <span class="burger__line"></span>
-        <span class="burger__line"></span>
-        <span class="burger__line"></span>
-      </button>
+
+        <button class="js-burger nav-mobile-btn" type="button">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+
+        <ul class="js-nav-mobile nav-mobile">
+          <li class="burger-link"><a href="#">О нас</a></li>
+          <li class="burger-link"><a href="#">Проекты</a></li>
+          <li class="burger-link"><a href="#">Этапы</a></li>
+          <li class="burger-link"><a href="#">Отзывы</a></li>
+          <li class="burger-link"><a href="#">Контакты</a></li>
+        </ul>
+      </div>
 
       <a href="#" class="logo">
         <img src=".//img/Logo-1.svg" alt="logo">
@@ -53,28 +65,59 @@
           </ul>
         </nav>
 
-        <!-- SEARCH -->
-        <div class="search">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="7.56126" height="1.89031"
-              transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6064 17.3762)" fill="" />
-            <path
-              d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z"
-              stroke="" stroke-width="2" />
-          </svg>
+
+
+
+           <!-- SEARCH -->
+           <div class="search header__search-icon flex">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="7.56126" height="1.89031"
+                transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6064 17.3762)" fill="" />
+              <path
+                d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z"
+                stroke="" stroke-width="2" />
+            </svg>
+
+            <input class="header__search-icon-active-input" type="search" placeholder="Что будем искать?">
+            <svg id="header__search-icon-input" class="header__nav-list-item-search-icon-input" width="24" height="24"
+              viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="7.56126" height="1.89031"
+                transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)" fill="#333333"></rect>
+              <path
+                d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z"
+                stroke="#333333" stroke-width="2"></path>
+            </svg>
+
+            <svg class="exit" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8.95386" y="7.30435" width="11.6645" height="2.33291" transform="rotate(45 8.95386 7.30435)"
+                fill="#999999"></rect>
+              <rect x="7.30432" y="15.5524" width="11.6645" height="2.33291" transform="rotate(-45 7.30432 15.5524)"
+                fill="#999999"></rect>
+              <circle cx="12" cy="12" r="11" stroke="#999999" stroke-width="2"></circle>
+            </svg>
+          </div>
+          <a href="#" class="header__nav-list-item-search">
+
+            <svg id="" class="search" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="7.56126" height="1.89031"
+                transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)" fill="#333333"></rect>
+              <path
+                d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z"
+                stroke="#333333" stroke-width="2"></path>
+            </svg>
+          </a>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
 
   <!-- HERO -->
 
   <section id="hero" class="hero section-offset hero--section">
     <div class="container hero--container">
-      <div class="swiper">
+      <div class="swiper" style="z-index: 0;">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <div class="hero-wrapper ">
+            <div class="hero-wrapper  wrapper--seting">
               <h1 class="hero-tittle">Проектные решения любой сложности</h1>
               <span class="hero-desc">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день
                 остаются
@@ -83,7 +126,7 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="hero-wrapper-2">
+            <div class="hero-wrapper-2 wrapper--seting">
               <h1 class="hero-tittle">Проектные решения любой сложности</h1>
               <span class="hero-desc">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день
                 остаются
@@ -92,7 +135,7 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="hero-wrapper-3">
+            <div class="hero-wrapper-3 wrapper--seting">
               <h1 class="hero-tittle">Проектные решения любой сложности</h1>
               <span class="hero-desc">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день
                 остаются
@@ -238,50 +281,43 @@
 
   <!-- HOW -->
 
-  <section id="how" class="how">
+  <section class="how section">
     <div class="container">
-      <div class="how-wrapper">
-        <h2 class="how-title">
-          Как мы работаем
-        </h2>
-        <div class="steps">
-          <a class="step-1" href="#">1 шаг</a>
-          <a class="step-2" href="#">2 шаг</a>
-          <a class="step-3" href="#">3 шаг</a>
-          <a class="step-4" href="#">4 шаг</a>
-        </div>
-
-        <div class="content-how">
-          <div class="how__wrapper">
-            <h3 class="how-desc">Проводим консультацию</h3>
-            <span class="how-text">Влечёт за собой процесс внедрения и модернизации приоритизации разума над эмоциями.
-              В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно
-              рассмотрены соответствующими инстанциями.<br>
-              А также представители современных социальных резервов, инициированные исключительно синтетически,
-              ограничены
-              исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных
-              источников, современные исследования подвергнуты целой серии независимых исследований. Кстати, стремящиеся
-              вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины
-              в целом,
-              однако конкретные выводы, разумеется, призваны к ответу.</span>
-            <div class="how-btns">
-              <button class="how__btn btn-reset">Подробнее</button>
-              <button class="how__btn btn-reset how-size">Договор</button>
-            </div>
+       <h2 class="header how__header">Как мы работаем</h2>
+       <ul class="tabs flex">
+          <li class="tabs_li"><a href="" class="tabs__link tab-active">1 шаг</a></li>
+          <li class="tabs_li"><a href="" class="tabs__link">2 шаг</a></li>
+          <li class="tabs_li"><a href="" class="tabs__link">3 шаг</a></li>
+          <li class="tabs_li"><a href="" class="tabs__link">4 шаг</a></li>
+       </ul>
+       <div class="how-slide flex">
+          <div class="how-slide__block">
+             <h3 class="how-slide__header">
+                Проводим консультацию
+             </h3>
+             <p class="how-slide__text">
+                Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати,  стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.
+             </p>
+             <div class="how_btns flex">
+                <button class="btn btn-color how_btn-1">Подробнее</button>
+                <button class="btn btn-trans how_btn-1">Договор</button>
+             </div>
           </div>
+          <div class="how-slide__picture">
 
-          <div class="content-image"></div>
-        </div>
-
-      </div>
+          </div>
+       </div>
     </div>
-  </section>
+ </section>
   <section class="faq">
-    <div class="container">
+    <div class="container accordion-container">
+
+
       <h2 class="accor-title">Часто задаваемые вопросы</h2>
       <ul class="questions list-reset">
         <li class="questions__li">
-          <a href="#" class="questions__link">
+
+          <a class="questions__link">
             <h4 class="questions__header">Из чего формируется конечная стоимость проекта?</h4>
             <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
               <ellipse cx="25" cy="25" rx="25" ry="25" fill="#ECECEC"></ellipse>
@@ -291,8 +327,9 @@
             </svg>
           </a>
         </li>
+
         <li class="questions__li">
-          <a href="#" class="questions__link">
+          <a  class="questions__link">
             <h4 class="questions__header">У меня есть свой проект. Сможем ли мы его доработать /<br> реализовать?</h4>
             <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
               <ellipse cx="25" cy="25" rx="25" ry="25" fill="#ECECEC"></ellipse>
@@ -302,8 +339,9 @@
             </svg>
           </a>
         </li>
+
         <li class="questions__li">
-          <a href="#" class="questions__link">
+          <a class="questions__link">
             <h4 class="questions__header">Я выбираю между разными компаниями. В чём ваше отличие?</h4>
             <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
               <ellipse cx="25" cy="25" rx="25" ry="25" fill="#ECECEC"></ellipse>
@@ -313,8 +351,9 @@
             </svg>
           </a>
         </li>
+
         <li class="questions__li">
-          <a href="#" class="questions__link">
+          <a  class="questions__link">
             <h4 class="questions__header">Могу ли я делегировать вам работу / согласование с подрядчиком / организацией?
             </h4>
             <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -325,8 +364,9 @@
             </svg>
           </a>
         </li>
+
         <li class="questions__li">
-          <a href="#" class="questions__link">
+          <a class="questions__link">
             <h4 class="questions__header">Могу ли я вернуть деньги на каком-либо из этапов работ? </h4>
             <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
               <ellipse cx="25" cy="25" rx="25" ry="25" fill="#ECECEC"></ellipse>
@@ -336,6 +376,7 @@
             </svg>
           </a>
         </li>
+
       </ul>
     </div>
   </section>
@@ -422,7 +463,13 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script src="js/scripts.js"></script>
+  <script src="js/burger.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/tabs.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/accordion.min.js"></script>
+
+
 </body>
 
 </html>

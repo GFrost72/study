@@ -292,15 +292,16 @@ p {
     z-index: 2;
   }
 
-  .nav-menu label span {
+  .nav-mobile-btn span {
     display: block;
     position: relative;
+    z-index: 10;
     width: 30px;
     height: 5px;
     background-color: #333;
     margin-bottom: 2px;
     transform-origin: center;
-    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, opacity 0.1s ease-out;
   }
 
   .nav-menu ul {
@@ -2134,3 +2135,4 @@ h1,h2,h3,h4,p,ul{
    font-weight: 400;
    padding: 24px 38px;
 }
+

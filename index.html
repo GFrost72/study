@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <title>Радио</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=2f9c8074-08bb-4095-a291-f3ba740863ab&lang=ru_RU"
+    type="text/javascript">
+    </script>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body class="page">
+  <header class="header container--header">
+
+    <a href="#" class="logo" aria-label="Логотип">
+      <img class="logo-image" src="./img/logo.svg" alt="logo"></a>
+
+    <nav class="nav">
+      <ul class="nav__list list-reset">
+        <li class="nav__item">
+          <a class="nav-link" href="#about">Подкасты</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav-link" href="">Передачи</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav-link" href="">Гости</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav-link" href="">Плейлисты</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav-link" href="">О нас</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="search-wrapper">
+      <button class="search btn-reset"></button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-wrapper flex">
+        <div class="hero-text-wrapper">
+          <h1 class="hero-title">Радио <span class="hero-title-span"> W-Wave</span></h1>
+          <p class="hero-desc">Привет, на связи W-Wave! Раньше мы были изданием, а теперь пробуем себя в разоворном
+            жанре. Говорим о музыке, политике, истории, науке и культуре. Здесь, помимо прямого эфира — архив передач
+            и многое другое:)</p>
+          <button class="btn-reset btn--hero">
+            Слушать эфир
+          </button>
+        </div>
+        <div class="hero-image-wrapper">
+          <div class="hero-image"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="podcast">
+    <div class="container">
+      <h2 class="podcast__title">Подкасты</h2>
+      <div class="podcast__articles">
+
+        <article class="podcast__article flex">
+          <div class="podcast__article-image podcast--image--one">
+            <div class="podcast-image-data">14 июня</div>
+          </div>
+          <div class="podcast__article-content flex">
+            <span class="podcast__article-time">15:43</span>
+            <h2 class="podcast__article-title">Европа. XIX век</h2>
+            <span class="podcast__article-name">Дмитрий Гутенберг</span>
+          </div>
+        </article>
+
+        <article class="podcast__article flex">
+          <div class="podcast__article-image podcast--image--two">
+            <div class="podcast-image-data">11 июня</div>
+          </div>
+          <div class="podcast__article-content flex">
+            <span class="podcast__article-time">5:32</span>
+            <h2 class="podcast__article-title">О музыке</h2>
+            <span class="podcast__article-name">Дмитрий Гутенберг</span>
+          </div>
+        </article>
+
+        <article class="podcast__article flex">
+          <div class="podcast__article-image podcast--image--three">
+            <div class="podcast-image-data">8 июня</div>
+          </div>
+          <div class="podcast__article-content flex">
+            <span class="podcast__article-time">8:54</span>
+            <h2 class="podcast__article-title">Люди сегодня</h2>
+            <span class="podcast__article-name">Анна Васильева</span>
+          </div>
+        </article>
+
+        <article class="podcast__article flex">
+          <div class="podcast__article-image podcast--image--four">
+            <div class="podcast-image-data">5 июня</div>
+          </div>
+          <div class="podcast__article-content flex">
+            <span class="podcast__article-time">9:04</span>
+            <h2 class="podcast__article-title">Хэллоу, Африка!</h2>
+            <span class="podcast__article-name">Пётр Дмитриевский</span>
+          </div>
+        </article>
+
+        <article class="podcast__article flex">
+          <div class="podcast__article-image podcast--image--five">
+            <div class="podcast-image-data">2 июня</div>
+          </div>
+          <div class="podcast__article-content flex">
+            <span class="podcast__article-time">7:03</span>
+            <h2 class="podcast__article-title">Обо всём</h2>
+            <span class="podcast__article-name">Пётр Дмитриевский</span>
+          </div>
+        </article>
+
+        <article class="podcast__article flex">
+          <div class="podcast__article-image podcast--image--six">
+            <div class="podcast-image-data">28 мая</div>
+          </div>
+          <div class="podcast__article-content flex">
+            <span class="podcast__article-time">9:15</span>
+            <h2 class="podcast__article-title">Физика цвета</h2>
+            <span class="podcast__article-name">Татьяна Флеганова</span>
+          </div>
+        </article>
+
+        <article class="podcast__article flex">
+          <div class="podcast__article-image podcast--image--seven">
+            <div class="podcast-image-data">22 мая</div>
+          </div>
+          <div class="podcast__article-content flex">
+            <span class="podcast__article-time">16:04</span>
+            <h2 class="podcast__article-title">Источник звука</h2>
+            <span class="podcast__article-name">Пётр Дмитриевский</span>
+          </div>
+        </article>
+
+        <article class="podcast__article flex">
+          <div class="podcast__article-image podcast--image--eight">
+            <div class="podcast-image-data">18 мая</div>
+          </div>
+          <div class="podcast__article-content flex">
+            <span class="podcast__article-time">6:55</span>
+            <h2 class="podcast__article-title">Правила этикета</h2>
+            <span class="podcast__article-name">Татьяна Флеганова</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="broadcast flex">
+    <div class="container broadcast__container">
+
+      <!-- TITLE BLOCK -->
+      <h2 class="broadcast__title">Передачи</h2>
+
+      <!-- CONTROLS BLOCK -->
+      <div class="broadcast__controls">
+        <div class="broadcast__mic"></div>
+        <button class="button btn-reset btn-broadcast">Архив</button>
+        <span class="broadcast-desc">В архив попадают все передачи, которые вы пропустили! Enjoy:)</span>
+      </div>
+
+      <!-- ARTICLE BLOCK -->
+      <div class="broadcast__wrapper">
+        <article class="broadcast-article flex">
+          <div class="broadcast-image broadcast-image-one"></div>
+          <div class="broadcast-article-wrapper">
+            <h3 class="broadcast-article-title">
+              О людях и книгах
+            </h3>
+            <span class="broadcast-article-desc">
+              Анонсируется отдельно
+            </span>
+            <button class="broadcast-article-details btn-reset">
+              Подробнее <span class="details__element"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="12"
+                  viewBox="0 0 28 12" fill="none">
+                  <path
+                    d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z"
+                    fill="#121723" />
+                </svg></span>
+            </button>
+          </div>
+        </article>
+        <article class="broadcast-article flex">
+          <div class="broadcast-image broadcast-image-two"></div>
+          <div class="broadcast-article-wrapper">
+            <h3 class="broadcast-article-title">
+              Графомания td
+            </h3>
+            <span class="broadcast-article-desc">
+              По понедельникам в 10:00
+            </span>
+            <button class="broadcast-article-details btn-reset">
+              Подробнее <span class="details__element"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="12"
+                  viewBox="0 0 28 12" fill="none">
+                  <path
+                    d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z"
+                    fill="#121723" />
+                </svg></span>
+            </button>
+          </div>
+        </article>
+        <article class="broadcast-article flex">
+          <div class="broadcast-image broadcast-image-three"></div>
+          <div class="broadcast-article-wrapper">
+            <h3 class="broadcast-article-title">
+              Не Рим, не Троя
+            </h3>
+            <span class="broadcast-article-desc">
+              По вторникам в 12:00
+            </span>
+            <button class="broadcast-article-details btn-reset">
+              Подробнее <span class="details__element"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="12"
+                  viewBox="0 0 28 12" fill="none">
+                  <path
+                    d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z"
+                    fill="#121723" />
+                </svg></span>
+            </button>
+          </div>
+        </article>
+        <article class="broadcast-article flex">
+          <div class="broadcast-image broadcast-image-four"></div>
+          <div class="broadcast-article-wrapper">
+            <h3 class="broadcast-article-title">
+              Эрудит
+            </h3>
+            <span class="broadcast-article-desc">
+              По пятницам в 17:00
+            </span>
+            <button class="broadcast-article-details btn-reset">
+              Подробнее <span class="details__element"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="12"
+                  viewBox="0 0 28 12" fill="none">
+                  <path
+                    d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z"
+                    fill="#121723" />
+                </svg></span>
+            </button>
+          </div>
+        </article>
+        <article class="broadcast-article flex">
+          <div class="broadcast-image broadcast-image-five"></div>
+          <div class="broadcast-article-wrapper">
+            <h3 class="broadcast-article-title">
+              Тонкости эпох
+            </h3>
+            <span class="broadcast-article-desc">
+              По субботам в 10:00
+            </span>
+            <button class="broadcast-article-details btn-reset">
+              Подробнее <span class="details__element"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="12"
+                  viewBox="0 0 28 12" fill="none">
+                  <path
+                    d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z"
+                    fill="#121723" />
+                </svg></span>
+            </button>
+          </div>
+        </article>
+        <article class="broadcast-article flex">
+          <div class="broadcast-image broadcast-image-six"></div>
+          <div class="broadcast-article-wrapper">
+            <h3 class="broadcast-article-title">
+              Живые мысли
+            </h3>
+            <span class="broadcast-article-desc">
+              По воскресеньям в 15:30
+            </span>
+            <button class="broadcast-article-details btn-reset">
+              Подробнее <span class="details__element"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="12"
+                  viewBox="0 0 28 12" fill="none">
+                  <path
+                    d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z"
+                    fill="#121723" />
+                </svg></span>
+            </button>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/93821987" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+
+</body>
+
+</html>
